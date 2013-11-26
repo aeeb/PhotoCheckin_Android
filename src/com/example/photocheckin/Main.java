@@ -14,12 +14,12 @@ public class Main extends Activity implements View.OnClickListener{
         setContentView(R.layout.main); //strat page
         
         //call btn register
-        Button register_btn = (Button) findViewById(R.id.register_btn);
-        register_btn.setOnClickListener(this);
+        Button call_register = (Button) findViewById(R.id.register_btn);
+        call_register.setOnClickListener(this);
         
       //call btn login
-        Button login_btn = (Button) findViewById(R.id.login_btn);
-        login_btn.setOnClickListener(this);
+        Button call_login = (Button) findViewById(R.id.login_btn);
+        call_login.setOnClickListener(this);
     }
 
 
@@ -36,12 +36,12 @@ public class Main extends Activity implements View.OnClickListener{
 		switch (v.getId()) {
 		
 		case R.id.register_btn:
-			Intent call_register= new Intent(this, Register.class);
-			startActivity(call_register);			
+			Intent call_registerbtn= new Intent(this, Register.class);
+			startActivity(call_registerbtn);			
 			break;
 		case R.id.login_btn:
-			Intent call_login = new Intent(this, LoginForm.class);
-			startActivity(call_login);			
+			Intent call_loginbtn = new Intent(this, LoginForm.class);
+			startActivity(call_loginbtn);			
 			break;	
 			
 		}
