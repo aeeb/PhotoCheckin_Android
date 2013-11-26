@@ -24,16 +24,10 @@
          
         </activity>
         
-        <!-- register -->
          <activity
             android:name="com.example.photocheckin.Register"
             android:label="@string/app_name" >
-          </activity>
-         <!-- login -->
-         <activity
-            android:name="com.example.photocheckin.LoginForm"
-            android:label="@string/app_name" >
-          </activity>
+            </activity>
         
     </application>
 
