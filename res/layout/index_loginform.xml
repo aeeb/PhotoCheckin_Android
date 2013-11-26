@@ -17,17 +17,18 @@
         <TableRow
             android:id="@+id/tableRow0"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content" 
+            android:layout_marginBottom="10dp">
 
             <TextView
                 android:id="@+id/TextView01"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="LoginForm"
+                android:text="PhotoCheckin"
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="@color/blue" 
-                android:textSize="14dp"/>
+                android:textColor="@color/blue"
+                android:textSize="14dp" />
 
         </TableRow>
 
@@ -143,24 +144,23 @@
                 android:textSize="10dp"/>
         </TableRow>
 
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:src="@drawable/register_icon" />
+
     </TableLayout>
 
-    <LinearLayout
-        android:id="@+id/linearLayout1"
+    <ImageView
+        android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="17dp"
-        android:orientation="vertical" >
-    </LinearLayout>
-
-    <ImageButton
-        android:id="@+id/imageButton1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/linearLayout1"
-        android:layout_below="@+id/tableLayout1"
-        android:layout_marginTop="38dp"
-        android:src="@drawable/register_icon" />
+        android:layout_marginTop="34dp"
+        android:src="@drawable/logo_photocheckin" />
 
 </RelativeLayout>
