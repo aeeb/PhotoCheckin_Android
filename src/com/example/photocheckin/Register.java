@@ -3,7 +3,6 @@ package com.example.photocheckin;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Window;
-import android.widget.Button;
 
 public class Register extends Activity{
 	  @Override
