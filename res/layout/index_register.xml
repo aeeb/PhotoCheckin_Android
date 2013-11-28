@@ -132,7 +132,8 @@
         android:layout_below="@+id/editText5"
         android:layout_marginTop="20dp"
         android:background="@drawable/bg_btn"
+        android:onClick="btnValidateEmailAddress"
         android:text="ลงทะเบียน"
         android:textColor="@color/white" />
-
+   
 </RelativeLayout>
