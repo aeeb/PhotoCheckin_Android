@@ -59,7 +59,7 @@
                     android:layout_weight="1"
                     android:background="@color/white"
                     android:ems="10"
-                    android:hint="UserName"
+                    android:hint="Username"
                     android:inputType="textPersonName" />
             </LinearLayout>
         </TableRow>
@@ -107,7 +107,7 @@
             android:layout_marginTop="5dp" >
 
             <Button
-                android:id="@+id/button1"
+                android:id="@+id/login_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="35dp"
                 android:background="@drawable/bg_btn"
@@ -142,25 +142,30 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/white" 
                 android:textSize="10dp"/>
+
         </TableRow>
 
         <ImageButton
-            android:id="@+id/imageButton1"
+            android:id="@+id/imgbtn_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:background="@null"
-            android:src="@drawable/register_icon" />
+            android:src="@drawable/register_icon" 
+            android:layout_marginTop="20dp"/>
 
     </TableLayout>
+    
+   <!-- Rest of Layout -->
 
     <ImageView
-        android:id="@+id/imageView1"
+        android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="24dp"
         android:src="@drawable/logo_photocheckin" />
-
+    
 </RelativeLayout>
+
+

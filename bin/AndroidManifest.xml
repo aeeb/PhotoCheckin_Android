@@ -24,15 +24,16 @@
          
         </activity>
         
-            <activity
-            android:name="com.example.photocheckin.Register"
-            android:label="@string/app_name" >
-            </activity>
+        
+		<!-- register -->
+         <activity android:name="com.example.photocheckin.Register"/>
             
-             <activity
-            android:name="com.example.photocheckin.LoginForm"
-            android:label="@string/app_name" >
-            </activity>
+         <!-- Login class -->
+         <activity  android:name="com.example.photocheckin.LoginForm" />
+         
+         <!--  WallPage -->
+         <activity  android:name="com.example.photocheckin.WallPage" />
+         
         
     </application>
 
