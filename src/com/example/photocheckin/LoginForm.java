@@ -6,11 +6,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
 public class LoginForm extends Activity implements View.OnClickListener{
-	  @Override
+	
+	EditText input_username;
+	EditText input_password;
+	
+	@Override
 	    protected void onCreate(Bundle savedInstanceState) {
 	        super.onCreate(savedInstanceState);
 	        requestWindowFeature(Window.FEATURE_NO_TITLE);  
@@ -19,6 +24,8 @@ public class LoginForm extends Activity implements View.OnClickListener{
 	     // call btn login
 			Button call_login = (Button) findViewById(R.id.login_btn);
 			call_login.setOnClickListener(this);
+			input_username = (EditText) findViewById(R.id.UserName_btn);
+			input_password = (EditText) findViewById(R.id.Password_btn);
 			
 		//  go to register
 			ImageButton goto_register = (ImageButton) findViewById(R.id.imgbtn_register);
