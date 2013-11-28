@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/editText1"
+        android:layout_below="@+id/editTextName"
         android:layout_marginRight="70dp"
         android:orientation="horizontal" >
 
@@ -27,11 +27,11 @@
     </RadioGroup>
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/editTextName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_alignRight="@+id/editText2"
+        android:layout_alignLeft="@+id/editTextEmail"
+        android:layout_alignRight="@+id/editTextEmail"
         android:layout_below="@+id/imageView1"
         android:layout_marginTop="10dp"
         android:background="@color/white"
@@ -52,11 +52,11 @@
         android:textSize="17sp" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editTextEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText4"
-        android:layout_alignRight="@+id/editText4"
+        android:layout_alignLeft="@+id/editTextPass"
+        android:layout_alignRight="@+id/editTextPass"
         android:layout_below="@+id/radiosex"
         android:background="@color/white"
         android:ems="10"
@@ -65,12 +65,12 @@
         android:textSize="15sp" />
     
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/editTextUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_alignRight="@+id/editText2"
-        android:layout_below="@+id/editText2"
+        android:layout_alignLeft="@+id/editTextEmail"
+        android:layout_alignRight="@+id/editTextEmail"
+        android:layout_below="@+id/editTextEmail"
         android:layout_marginTop="10dp"
         android:background="@color/white"
         android:ems="10"
@@ -79,10 +79,10 @@
         android:textSize="15sp" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/editTextPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText3"
+        android:layout_below="@+id/editTextUsername"
         android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"
         android:ems="10"
@@ -92,12 +92,12 @@
         android:inputType="textPassword" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/editTextConfirmPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText4"
-        android:layout_alignRight="@+id/editText4"
-        android:layout_below="@+id/editText4"
+        android:layout_alignLeft="@+id/editTextPass"
+        android:layout_alignRight="@+id/editTextPass"
+        android:layout_below="@+id/editTextPass"
         android:layout_marginTop="10dp"
         android:background="@color/white"
         android:ems="10"
@@ -127,12 +127,12 @@
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
-        android:layout_alignLeft="@+id/editText5"
-        android:layout_alignRight="@+id/editText5"
-        android:layout_below="@+id/editText5"
+        android:layout_alignLeft="@+id/editTextConfirmPass"
+        android:layout_alignRight="@+id/editTextConfirmPass"
+        android:layout_below="@+id/editTextConfirmPass"
         android:layout_marginTop="20dp"
         android:background="@drawable/bg_btn"
-        android:onClick="btnValidateEmailAddress"
+        android:onClick="btnregis"
         android:text="ลงทะเบียน"
         android:textColor="@color/white" />
    
