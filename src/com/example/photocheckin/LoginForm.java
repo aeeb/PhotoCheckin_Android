@@ -39,13 +39,16 @@ public class LoginForm extends Activity implements View.OnClickListener {
 
 	
 	// check login
-		public void checklogin(View v){
-			
-		try{
+		public void checkvalue(View v){
+			btnValidateUsername(v);
+		}
+
+		public void btnValidateUsername(View v){
+			try{
 			//รับค่ามาแปลงให้เป็น String
 			strUsername = input_username.getText().toString().trim();
 		        if(strUsername.isEmpty()){
-		        	Toast.makeText(v.getContext(), "Your Username must not empty", Toast.LENGTH_SHORT).show();
+		        	Toast.makeText(v.getContext(),"Your Username must not empty", Toast.LENGTH_SHORT).show();
 		        }
 	        }
 		
@@ -62,7 +65,7 @@ public class LoginForm extends Activity implements View.OnClickListener {
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
-		case R.id.login_btn:
+	case R.id.login_btn:
 			Intent call_index_wallpage = new Intent(this, WallPage.class);
 			startActivity(call_index_wallpage);
 			break;
