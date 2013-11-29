@@ -1,139 +1,236 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg"
-    android:gravity="center|top" >
-    
-    <RadioGroup
-        android:id="@+id/radiosex"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/editTextName"
-        android:layout_marginRight="70dp"
-        android:orientation="horizontal" >
+    android:gravity="center|top"
+    android:orientation="vertical" >
 
-        <RadioButton
-            android:id="@+id/radiomale"
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ชาย" />
+            android:layout_gravity="center" >
 
-        <RadioButton
-            android:id="@+id/radiofemale"
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="15dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="หญิง" />
-    </RadioGroup>
+            android:layout_margin="10px" >
 
-    <EditText
-        android:id="@+id/editTextName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editTextEmail"
-        android:layout_alignRight="@+id/editTextEmail"
-        android:layout_below="@+id/imageView1"
-        android:layout_marginTop="10dp"
-        android:background="@color/white"
-        android:ems="10"
-        android:hint="ชื่อ นามสกุล"
-        android:inputType="textPersonName"
-        android:textSize="15sp" >
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
 
-        <requestFocus />
-    </EditText>
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="96dp"
+                    android:layout_height="102dp"
+                    android:src="@drawable/uploadprofile_pic" />
+            </FrameLayout>
+        </TableRow>
 
-    <TextView
-        android:id="@+id/TextView01"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:textSize="17sp" />
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
 
-    <EditText
-        android:id="@+id/editTextEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editTextPass"
-        android:layout_alignRight="@+id/editTextPass"
-        android:layout_below="@+id/radiosex"
-        android:background="@color/white"
-        android:ems="10"
-        android:hint="E-mail"
-        android:inputType="textEmailAddress"
-        android:textSize="15sp" />
-    
-    <EditText
-        android:id="@+id/editTextUsername"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editTextEmail"
-        android:layout_alignRight="@+id/editTextEmail"
-        android:layout_below="@+id/editTextEmail"
-        android:layout_marginTop="10dp"
-        android:background="@color/white"
-        android:ems="10"
-        android:hint="Username"
-        android:inputType="textPersonName"
-        android:textSize="15sp" />
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
 
-    <EditText
-        android:id="@+id/editTextPass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editTextUsername"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:textSize="15sp"
-        android:background="@color/white"
-        android:hint="Password"
-        android:inputType="textPassword" />
+                <RadioGroup
+                    android:id="@+id/radiosex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
 
-    <EditText
-        android:id="@+id/editTextConfirmPass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editTextPass"
-        android:layout_alignRight="@+id/editTextPass"
-        android:layout_below="@+id/editTextPass"
-        android:layout_marginTop="10dp"
-        android:background="@color/white"
-        android:ems="10"
-        android:hint="Confirm Password"
-        android:inputType="textPassword"
-        android:textSize="15sp" />
+                    <RadioButton
+                        android:id="@+id/radiomale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ชาย" />
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_below="@+id/textView1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="14dp"
-        android:src="@drawable/uploadprofile_pic" />
+                    <RadioButton
+                        android:id="@+id/radiofemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="หญิง" />
+                </RadioGroup>
+            </FrameLayout>
+        </TableRow>
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/TextView01"
-        android:layout_centerHorizontal="true"
-        android:text="สมัครสมาชิก"
-        android:textSize="17sp" />
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/bg_textfild" >
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        android:layout_alignLeft="@+id/editTextConfirmPass"
-        android:layout_alignRight="@+id/editTextConfirmPass"
-        android:layout_below="@+id/editTextConfirmPass"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/bg_btn"
-        android:onClick="btnregis"
-        android:text="ลงทะเบียน"
-        android:textColor="@color/white" />
-   
-</RelativeLayout>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5px"
+                android:layout_weight="1" >
+
+                <EditText
+                    android:id="@+id/editTextName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10px"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:hint="ชื่อ นามสกุล"
+                    android:inputType="textPersonName"
+                    android:textSize="15dp" />
+            </FrameLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5px"
+            android:background="@drawable/bg_textfild" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <EditText
+                    android:id="@+id/editTextEmail"
+                    android:layout_width="248dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="6px"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:hint="E-mail"
+                    android:inputType="textEmailAddress"
+                    android:textSize="15dp" >
+                </EditText>
+            </FrameLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5px"
+            android:background="@drawable/bg_textfild" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5px" >
+
+                <EditText
+                    android:id="@+id/editTextUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10px"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:hint="Username"
+                    android:inputType="textPersonName"
+                    android:textSize="15dp" >
+
+                    <requestFocus />
+                </EditText>
+            </FrameLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5px"
+            android:background="@drawable/bg_textfild" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <EditText
+                    android:id="@+id/editTextPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="47px"
+                    android:layout_marginLeft="15px"
+                    android:layout_marginTop="6px"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textSize="15dp" />
+            </FrameLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_textfild" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5px" >
+
+                <EditText
+                    android:id="@+id/editTextConfirmPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2px"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:textSize="15dp" />
+            </FrameLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_btn"
+                android:onClick="btnregis"
+                android:padding="10dp"
+                android:text="Register"
+                android:textColor="@color/white" />
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
