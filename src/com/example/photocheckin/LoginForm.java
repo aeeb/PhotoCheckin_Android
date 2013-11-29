@@ -37,25 +37,40 @@ public class LoginForm extends Activity implements View.OnClickListener {
 		goto_register.setOnClickListener(this);
 	}
 
-	
-	// check login
-		public void checkvalue(View v){
-			btnValidateUsername(v);
-		}
 
-		public void btnValidateUsername(View v){
-			try{
-			//รับค่ามาแปลงให้เป็น String
-			strUsername = input_username.getText().toString().trim();
-		        if(strUsername.isEmpty()){
-		        	Toast.makeText(v.getContext(),"Your Username must not empty", Toast.LENGTH_SHORT).show();
+		public boolean btnValidateUsername(View v){
+			boolean value = true;
+				try{
+					//รับค่ามาแปลงให้เป็น String
+					strUsername = input_username.getText().toString().trim();
+				        if(strUsername.isEmpty()){
+				        	Toast.makeText(v.getContext(),"Your Username must not empty", Toast.LENGTH_SHORT).show();
+				        	value = false;
+				        }
+			        }
+				
+		     	catch (NullPointerException ex) {
+		     		ex.printStackTrace();	
 		        }
-	        }
+			return value;
 		
-	     	catch (NullPointerException ex) {
-	     		ex.printStackTrace();	
-	        }
+		}
 		
+		public boolean btnValidatePassword(View v){
+			boolean value = true;
+				try{
+					//รับค่ามาแปลงให้เป็น String
+					strPassword = input_password.getText().toString().trim();
+				        if(strPassword.isEmpty()){
+				        	Toast.makeText(v.getContext(),"Your Password must not empty", Toast.LENGTH_SHORT).show();
+				        	value = false;
+				        }
+			        }
+				
+		     	catch (NullPointerException ex) {
+		     		ex.printStackTrace();	
+		        }			
+			return value;
 		}
 	
 	
@@ -65,9 +80,11 @@ public class LoginForm extends Activity implements View.OnClickListener {
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
-	case R.id.login_btn:
-			Intent call_index_wallpage = new Intent(this, WallPage.class);
-			startActivity(call_index_wallpage);
+		case R.id.login_btn:
+			if(btnValidateUsername(v) && btnValidatePassword(v)){
+				Intent call_index_wallpage = new Intent(this, WallPage.class);
+				startActivity(call_index_wallpage);
+			}
 			break;
 		case R.id.imgbtn_register:
 			Intent call_registerbtn = new Intent(this, Register.class);
