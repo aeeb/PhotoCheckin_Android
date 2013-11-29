@@ -94,7 +94,7 @@
                     android:background="@color/white"
                     android:ems="10"
                     android:hint="*********"
-                    android:inputType="textPersonName" >
+                    android:inputType="textPassword" >
 
                     <requestFocus />
                 </EditText>
@@ -114,7 +114,8 @@
                 android:background="@drawable/bg_btn"
                 android:text="Login"
                 android:textColor="@color/white" 
-                android:layout_marginTop="-1dp"/>
+                android:layout_marginTop="-1dp"
+                android:onClick="checkvalue"/>
         </TableRow>
 
         <TableRow
